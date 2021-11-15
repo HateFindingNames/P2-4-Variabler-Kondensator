@@ -1,0 +1,288 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 5F9940B8
+P 3950 2400
+F 0 "C1" H 4065 2400 50  0000 L CNN
+F 1 "C" H 4065 2355 50  0001 L CNN
+F 2 "" H 3988 2250 50  0001 C CNN
+F 3 "~" H 3950 2400 50  0001 C CNN
+	1    3950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F99AD65
+P 4800 2400
+F 0 "C2" H 4900 2400 50  0000 L CNN
+F 1 "Bekannte Kapazität" H 4850 2250 50  0001 L CNN
+F 2 "" H 4838 2250 50  0001 C CNN
+F 3 "~" H 4800 2400 50  0001 C CNN
+	1    4800 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2000 3950 2250
+Wire Wire Line
+	3950 3000 3950 2550
+Wire Wire Line
+	3950 3000 4800 3000
+Wire Wire Line
+	4800 3000 4800 2550
+Wire Wire Line
+	4050 1600 4800 1600
+Wire Wire Line
+	4800 1600 4800 2250
+$Comp
+L Switch:SW_DPDT_x2 SW?
+U 1 1 5F997976
+P 3950 1800
+F 0 "SW?" V 3996 1612 50  0001 R CNN
+F 1 "S1" V 3950 1612 50  0000 R CNN
+F 2 "" H 3950 1800 50  0001 C CNN
+F 3 "~" H 3950 1800 50  0001 C CNN
+	1    3950 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F9A88CA
+P 3950 4800
+F 0 "C1" H 4065 4800 50  0000 L CNN
+F 1 "C" H 4065 4755 50  0001 L CNN
+F 2 "" H 3988 4650 50  0001 C CNN
+F 3 "~" H 3950 4800 50  0001 C CNN
+	1    3950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:VDC V?
+U 1 1 5F9A88D3
+P 3200 4800
+F 0 "V?" H 3330 4891 50  0001 L CNN
+F 1 "VDC" H 3330 4800 50  0000 L CNN
+F 2 "" H 3200 4800 50  0001 C CNN
+F 3 "~" H 3200 4800 50  0001 C CNN
+F 4 "Y" H 3200 4800 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 3200 4800 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 3330 4755 50  0001 L CNN "Spice_Model"
+	1    3200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F9A88D9
+P 4800 4800
+F 0 "C2" H 4900 4800 50  0000 L CNN
+F 1 "Bekannte Kapazität" H 4850 4650 50  0001 L CNN
+F 2 "" H 4838 4650 50  0001 C CNN
+F 3 "~" H 4800 4800 50  0001 C CNN
+	1    4800 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4400 3950 4650
+Wire Wire Line
+	3200 4000 3200 4600
+Wire Wire Line
+	3200 5000 3200 5400
+Wire Wire Line
+	3950 5400 3950 4950
+Wire Wire Line
+	3950 5400 4800 5400
+Wire Wire Line
+	4800 5400 4800 4950
+Wire Wire Line
+	4050 4000 4800 4000
+Wire Wire Line
+	4800 4000 4800 4650
+$Comp
+L aufbau1-rescue:SW_DPDT_x2_reverse-Switch-aufbau1-rescue SW?
+U 1 1 5F9AAAA7
+P 3950 4200
+F 0 "SW?" V 3996 4012 50  0001 R CNN
+F 1 "S1" V 3950 4012 50  0000 R CNN
+F 2 "" H 3950 4200 50  0001 C CNN
+F 3 "~" H 3950 4200 50  0001 C CNN
+	1    3950 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Simulation_SPICE:VDC V?
+U 1 1 5F995763
+P 3200 2400
+F 0 "V?" H 3330 2491 50  0001 L CNN
+F 1 "VDC" H 3330 2400 50  0000 L CNN
+F 2 "" H 3200 2400 50  0001 C CNN
+F 3 "~" H 3200 2400 50  0001 C CNN
+F 4 "Y" H 3200 2400 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 3200 2400 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 3330 2355 50  0001 L CNN "Spice_Model"
+	1    3200 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1600 3200 1600
+Wire Wire Line
+	3200 1600 3200 2200
+Wire Wire Line
+	3200 2600 3200 3000
+Wire Wire Line
+	3200 3000 3950 3000
+Connection ~ 3950 3000
+Wire Wire Line
+	3200 4000 3850 4000
+Wire Wire Line
+	3200 5400 3950 5400
+Connection ~ 3950 5400
+$Comp
+L Device:C C1
+U 1 1 5F9C351A
+P 6800 4800
+F 0 "C1" H 6915 4800 50  0000 L CNN
+F 1 "C" H 6915 4755 50  0001 L CNN
+F 2 "" H 6838 4650 50  0001 C CNN
+F 3 "~" H 6800 4800 50  0001 C CNN
+	1    6800 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:VDC V?
+U 1 1 5F9C3523
+P 6050 4800
+F 0 "V?" H 6180 4891 50  0001 L CNN
+F 1 "VDC" H 6180 4800 50  0000 L CNN
+F 2 "" H 6050 4800 50  0001 C CNN
+F 3 "~" H 6050 4800 50  0001 C CNN
+F 4 "Y" H 6050 4800 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6050 4800 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 6180 4755 50  0001 L CNN "Spice_Model"
+	1    6050 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4400 6800 4650
+Wire Wire Line
+	6050 4000 6050 4600
+Wire Wire Line
+	6050 5000 6050 5400
+Wire Wire Line
+	6800 5400 6800 4950
+Wire Wire Line
+	6900 4000 7650 4000
+$Comp
+L aufbau1-rescue:SW_DPDT_x2_reverse-Switch-aufbau1-rescue SW?
+U 1 1 5F9C3537
+P 6800 4200
+F 0 "SW?" V 6846 4012 50  0001 R CNN
+F 1 "S1" V 6800 4012 50  0000 R CNN
+F 2 "" H 6800 4200 50  0001 C CNN
+F 3 "~" H 6800 4200 50  0001 C CNN
+	1    6800 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 4000 6700 4000
+Wire Wire Line
+	6050 5400 6800 5400
+$Comp
+L Device:Voltmeter_DC MES?
+U 1 1 5F9C3B79
+P 7650 4800
+F 0 "MES?" H 7803 4846 50  0001 L CNN
+F 1 "Voltmeter" H 7803 4800 50  0000 L CNN
+F 2 "" V 7650 4900 50  0001 C CNN
+F 3 "~" V 7650 4900 50  0001 C CNN
+	1    7650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4000 7650 4600
+Wire Wire Line
+	7650 5000 7650 5400
+Wire Wire Line
+	7650 5400 6800 5400
+Connection ~ 6800 5400
+$Comp
+L Device:C C1
+U 1 1 5F9C82E3
+P 6800 2400
+F 0 "C1" H 6915 2400 50  0000 L CNN
+F 1 "C" H 6915 2355 50  0001 L CNN
+F 2 "" H 6838 2250 50  0001 C CNN
+F 3 "~" H 6800 2400 50  0001 C CNN
+	1    6800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:VDC V?
+U 1 1 5F9C82EC
+P 6050 2400
+F 0 "V?" H 6180 2491 50  0001 L CNN
+F 1 "VDC" H 6180 2400 50  0000 L CNN
+F 2 "" H 6050 2400 50  0001 C CNN
+F 3 "~" H 6050 2400 50  0001 C CNN
+F 4 "Y" H 6050 2400 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6050 2400 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 6180 2355 50  0001 L CNN "Spice_Model"
+	1    6050 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2000 6800 2250
+Wire Wire Line
+	6050 1600 6050 2200
+Wire Wire Line
+	6050 2600 6050 3000
+Wire Wire Line
+	6800 3000 6800 2550
+Wire Wire Line
+	6900 1600 7650 1600
+Wire Wire Line
+	6050 1600 6700 1600
+Wire Wire Line
+	6050 3000 6800 3000
+$Comp
+L Device:Voltmeter_DC MES?
+U 1 1 5F9C82FF
+P 7650 2400
+F 0 "MES?" H 7803 2446 50  0001 L CNN
+F 1 "Voltmeter" H 7803 2400 50  0000 L CNN
+F 2 "" V 7650 2500 50  0001 C CNN
+F 3 "~" V 7650 2500 50  0001 C CNN
+	1    7650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1600 7650 2200
+Wire Wire Line
+	7650 2600 7650 3000
+Wire Wire Line
+	7650 3000 6800 3000
+Connection ~ 6800 3000
+$Comp
+L Switch:SW_DPDT_x2 SW?
+U 1 1 5F9C8AD5
+P 6800 1800
+F 0 "SW?" V 6846 1612 50  0001 R CNN
+F 1 "S1" V 6800 1612 50  0000 R CNN
+F 2 "" H 6800 1800 50  0001 C CNN
+F 3 "~" H 6800 1800 50  0001 C CNN
+	1    6800 1800
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
